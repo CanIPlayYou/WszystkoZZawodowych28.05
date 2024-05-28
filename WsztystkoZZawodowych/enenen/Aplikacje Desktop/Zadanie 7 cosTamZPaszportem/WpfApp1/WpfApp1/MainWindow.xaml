@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Wprowadzenie danych do paszportu. Wykonał: 000000000000" Height="450" Width="800" Background="#5F9EA0">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Imię" HorizontalAlignment="Left" Margin="32,92,0,0" VerticalAlignment="Top"/>
+            <Label Content="Numer" HorizontalAlignment="Left" Margin="32,40,0,0" VerticalAlignment="Top"/>
+            <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="32,147,0,0" VerticalAlignment="Top"/>
+
+            <TextBox x:Name="numerTextbox" Background="#F0FFFF" HorizontalAlignment="Left" Margin="183,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="186" LostFocus="numerTextbox_LostFocus"/>
+            <TextBox x:Name="imieTextbox" Background="#F0FFFF" HorizontalAlignment="Left" Margin="183,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="186"/>
+            <TextBox x:Name="nazwiskoTextbox" Background="#F0FFFF" HorizontalAlignment="Left" Margin="183,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="186"/>
+
+            <Label Content="Kolor oczu" Background="#5F9EA0" Panel.ZIndex="1" HorizontalAlignment="Left" Margin="32,16,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+            <Border BorderBrush="White" CornerRadius="5" Width="350px" Height="150px" BorderThickness="2" Grid.Row="1">
+                <StackPanel Margin="20">
+                    <RadioButton Margin="0, 10, 0 , 10" Content="niebieskie" Checked="RadioButton_EyesColor_Checked" IsChecked="True"/>
+                    <RadioButton Margin="0, 10, 0 , 10" Content="zielone" Checked="RadioButton_EyesColor_Checked"/>
+                    <RadioButton Margin="0, 10, 0 , 10" Content="piwne" Checked="RadioButton_EyesColor_Checked"/>
+                </StackPanel>
+            </Border>
+
+
+
+        </Grid>
+        
+        
+        <Image x:Name="personImage" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="44,106,0,0" VerticalAlignment="Top" Source="/images/000-zdjecie.jpg"/>
+        <Image x:Name="fingerPrintImage" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="249,106,0,0" VerticalAlignment="Top" Source="/images/000-odcisk.jpg"/>
+
+        <Button x:Name="okButton" Grid.Column="1" Content="OK" Background="#F0FFFF" HorizontalAlignment="Left" Margin="44,335,0,0" VerticalAlignment="Top" Height="61" Width="325" Click="okButton_Click"/>
+
+    </Grid>
+</Window>

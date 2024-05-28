@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90ee90">
+
+
+    <TextView
+        android:id="@+id/wizytaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E8B57"
+        android:padding="10dp"
+        android:text="Wizyta u weterynarza"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/imieNazwiskoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Imię i nazwisko właściciela..."
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gatunek"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="193dp" />
+
+    <TextView
+        android:id="@+id/ileLatText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ile ma lat? 0"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="-24dp"
+        android:max="20" />
+
+    <EditText
+        android:id="@+id/celWizytyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cel wizyty:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/godzinaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:text="16:00"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/wynikText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+</LinearLayout>

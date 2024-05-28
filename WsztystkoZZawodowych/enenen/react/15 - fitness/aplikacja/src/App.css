@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navBar{
+    background-color: #343a40;
+    width: 100%;
+    height: 75px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.mainForDivs{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 675px;
+    color: white;
+}
+
+.inputsDiv{
+    background-color: #4c5157;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.helperText{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.calendarDiv{
+    background-color: #404348;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.monthName{
+    text-align: center;
+}
+
+.daysInMonth{
+    height: 580px;
+}
+
+.calendaryBtns{
+    background-color: #343a40;
+    color: white;
+    border: none;
+    margin: 10px;
+    height: 75px;
+    width: 100px;
+}
+
+.calendaryBtns:hover{
+    background-color: #454c53;
+}

@@ -1,0 +1,2 @@
+C:\Users\4TEP\Desktop\Zadania\WsztystkoZZawodowych\enenen\c++\ZadanieKlasy22.05\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe.lastcodeanalysissucceeded
+C:\Users\4TEP\Desktop\Zadania\WsztystkoZZawodowych\enenen\c++\ZadanieKlasy22.05\ConsoleApplication1\ConsoleApplication1\x64\Debug\NativeCodeAnalysis.read.1.tlog

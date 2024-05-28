@@ -1,0 +1,8 @@
+Zadanie: Obliczanie Sumy Tablicy
+Napisz program w języku C#, który przy użyciu wskaźników obliczy sumę elementów w danej tablicy liczb całkowitych.
+
+Wskazówki:
+Zadeklaruj tablicę liczb całkowitych i wprowadź jej elementy.
+Użyj wskaźników do iteracji po elementach tablicy.
+Oblicz sumę elementów tablicy przy użyciu wskaźników.
+Wyświetl wynik na ekranie.

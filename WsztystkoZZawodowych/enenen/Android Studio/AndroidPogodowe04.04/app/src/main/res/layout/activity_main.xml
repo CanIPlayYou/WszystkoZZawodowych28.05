@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#caf0f8">
+
+    <EditText
+        android:id="@+id/cityText"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Wprowadź nazwę miasta: "
+        android:inputType="text"
+        android:backgroundTint="#48cae4"/>
+
+    <Button
+        android:id="@+id/sprawdzPogodeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Sprawdź pogode"
+        android:backgroundTint="#48cae4"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/celsRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Temperatura w Celsjuszach"
+            android:textStyle="bold"
+            app:buttonTint="#48cae4"/>
+
+        <RadioButton
+            android:id="@+id/fahreRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="-53dp"
+            android:text="Temperatura w Fahrenheitach"
+            android:textStyle="bold"
+            app:buttonTint="#48cae4"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/opadyCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Pokaż szanse na opady"
+        android:textStyle="bold"
+        app:buttonTint="#48cae4"/>
+
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
